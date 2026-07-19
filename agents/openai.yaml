@@ -1,0 +1,4 @@
+interface:
+  display_name: "Skill Idea Miner"
+  short_description: "Find useful skill ideas from real workflow pain points."
+  default_prompt: "Use $skill-idea-miner to identify practical Codex skill ideas from my recurring workflow pain points."
