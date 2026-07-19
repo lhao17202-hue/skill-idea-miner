@@ -38,6 +38,14 @@ Avoid recommending a skill when the task is one-off, trivial for a general model
 
 For more examples and anti-patterns, read `references/opportunity-patterns.md` when the user asks for many ideas, a full audit, or deeper prioritization.
 
+Read `references/discovery-methods.md` when the user provides little context and needs help uncovering hidden workflow pain points.
+
+Read `references/example-candidates.md` when the user wants inspiration across coding, writing, research, operations, design, or personal Codex workflows.
+
+Read `references/output-templates.md` when the user asks for a specific deliverable such as a ranked backlog, one-page spec, or frontmatter-ready skill draft.
+
+Read `references/validation-playbook.md` when deciding whether a candidate is worth building or when preparing forward-test prompts for a selected skill idea.
+
 ## Mining Workflow
 
 1. Extract pain points from the user request, repository context, chat history, or workflow description.
@@ -78,6 +86,15 @@ Unless the user requests another format, present 5-8 candidates in a table with:
 
 After the table, recommend the top 1-3 skills to build first. If one idea is clearly best, say so directly.
 
+When the user asks for "complete", "detailed", "open source", "ready to build", or similar wording, include:
+
+- a ranked backlog
+- one expanded spec for the top candidate
+- frontmatter-ready `name` and `description`
+- likely bundled resources
+- example trigger prompts
+- validation or forward-test ideas
+
 ## Description Drafting Rules
 
 Write descriptions as frontmatter-ready text:
@@ -104,6 +121,17 @@ For each candidate, suggest only resources that would materially improve executi
 - no bundled resources when concise instructions are enough
 
 Do not over-engineer the skill. A small SKILL.md is better than unused folders.
+
+## Quality Bar
+
+Before presenting the final recommendation, check that each proposed skill:
+
+- has a distinct purpose from the others
+- can trigger from natural user wording
+- has a narrow enough scope to write useful instructions
+- explains the pain point it removes
+- suggests concrete reusable resources only when needed
+- includes at least one realistic example request when expanded
 
 ## Handoff To Creation
 
