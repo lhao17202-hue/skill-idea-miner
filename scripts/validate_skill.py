@@ -86,6 +86,8 @@ def validate(root: Path) -> None:
     for link in REQUIRED_SKILL_LINKS:
         if link not in skill_text:
             fail(f"SKILL.md does not link {link}.")
+        if not (root / link).read_text(encoding="utf-8").strip():
+            fail(f"{link} is empty.")
 
     openai_yaml = (root / "agents/openai.yaml").read_text(encoding="utf-8")
     for required in ["display_name", "short_description", "default_prompt"]:

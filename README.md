@@ -84,6 +84,7 @@ The validator checks:
 - skill naming rules
 - `agents/openai.yaml` basics
 - required reference links
+- non-empty linked reference files
 - absence of unresolved TODO placeholders
 
 ## Design Notes
